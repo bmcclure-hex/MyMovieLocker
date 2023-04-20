@@ -29,9 +29,11 @@ include_once 'database.php'
                 $row = mysqli_fetch_assoc($result);
                             
                 if (($row['email'] == $email) && ($row['password'] == $password) ) {
-                    // Change redirect link below to where it should land on after login 
-                    // header("Location: register.php"); 
-                    echo"Account found!";
+                  
+                    // redirect here 
+                    $link_address = '../MyMovieLocker/index.html';
+                   // echo '<a href="'.$link_address.'">Link</a>';
+                    echo" Account found!";
                 }else{
                     echo 'No Account Found';
                 }
