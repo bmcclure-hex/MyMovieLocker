@@ -6,16 +6,26 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
+<header>
 	<header>
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="login.html">Login/Registration</a></li>
-				<li><a href="faq.html">FAQ</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
+		  <nav class="navbar">
+			    <!-- LOGO -->
+			    <div class="logo">MyMovieLocker</div>
+	
+			    <!-- NAVIGATION MENU -->
+			    <ul class="nav-links">
+	
+				      <!-- NAVIGATION MENUS -->
+				      <div class="menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="login.html">Login/Registration</a></li>
+					      
+				</div>
+				    </ul>
+			  </nav>
+	</body>
 	</header>
 	<h1>MyMovieLocker</h1>
 	<form action="login.php" method="post">
@@ -26,9 +36,19 @@
 		<input type="password" id="password" name="password" required>
 		<br>
 		<input type="submit" value="Login">
+
+		<!--CREATE DATABASE FOR REGISTRATION FOR NEW ACCOUNTS-->
+		<!--username, password, password again, 
+			email (verification)
+			first name,
+			last name-->
+
+		<!--SEARCH BUTTON FOR MOVIES-->!
+
+
 	</form>
 	<p>Don't have an account? <a href="register.php">Register here</a></p>
-	<footer>
+	<footer><br><br>
 		<p>&copy; 2023 MyMovieLocker. All rights reserved.</p>
 	</footer>
 </body>
