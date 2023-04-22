@@ -22,6 +22,7 @@
 	</header>
 
 	<main>
+		<h1>Available Movies</h1>
 		<?php
 		
 			if(mysqli_num_rows($result) > 0)
@@ -43,9 +44,7 @@
 		?>
 	</main>
 
-	<footer>
-		<p>&copy; 2023 MyMovieLocker. All rights reserved.</p>
-	</footer>
+	<?php include_once 'incFiles/footer.php'; ?>
 
 </body>
 

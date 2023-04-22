@@ -39,9 +39,7 @@
 			able to complete a form to request the movie to be added to the database. </p>
 	</main>
 
-	<footer>
-		<p>&copy; 2023 MyMovieLocker. All rights reserved.</p>
-	</footer>
+	<?php include_once 'incFiles/footer.php'; ?>
 
 </body>
 

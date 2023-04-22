@@ -54,6 +54,7 @@
             </form>
         </div>
     </div>
+	<?php include_once 'incFiles/footer.php'; ?>
 </body>
 
 </html>
