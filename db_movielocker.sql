@@ -20,7 +20,10 @@ SET time_zone = "+00:00";
 --
 -- Database: `db_movielocker`
 --
+CREATE DATABASE `db_movielocker`;
 
+
+USE `db_movielocker`;
 -- --------------------------------------------------------
 
 --
