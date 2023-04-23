@@ -11,8 +11,7 @@
 <html>
 
 <head>
-	<title>My Website</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<?php include_once 'incFiles/header.php'; ?>
 </head>
 
 <body>
@@ -26,15 +25,12 @@
 			<div class="form-box">
 
 				
-				<form action="locker.php" method="post">
-
-					<div class="form-group">
-						<input type="text" class="input-field" name="lockername" placeholder="Locker Name:">
-					</div>
+				<form action="locker.php" method="post" id="create-locker-form" style="display:none;">
+					<label for="locker-name">Locker Name:</label>
+					<input type="text" class="input-field" name="lockername" placeholder="Locker Name:" required>
+					<br>
+					<button type="submit" class="btn btn-primary" value="Create" name="submit">Create New Locker</button>
 					
-					<div class="btn-field">
-						<button type="submit" class="btn btn-primary" value="Create" name="submit">Create New Locker</button>
-					</div>
 
 				</form>
 			</div>

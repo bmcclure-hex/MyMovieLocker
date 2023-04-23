@@ -15,6 +15,19 @@
   position: relative;
 }
 
+.content {
+  width: 87%;
+  height: 85%;
+  min-width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 10px 10px 10px;
+  text-align: center;
+}
+
 .form-box {
   width: 87%;
   max-width: 450px;

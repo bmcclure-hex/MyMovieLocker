@@ -7,12 +7,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
-    <link rel="stylesheet" href="login_stylesheet.css" />
-    <script src="https://kit.fontawesome.com/b91d37de2e.js" crossorigin="anonymous"></script>
+    
+    <?php include_once 'incFiles/header.php'; ?>
 </head>
 
 <body>

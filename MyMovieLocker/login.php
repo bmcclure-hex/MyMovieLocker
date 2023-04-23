@@ -11,12 +11,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
-    <link rel="stylesheet" href="login_stylesheet.css" />
-    <script src="https://kit.fontawesome.com/b91d37de2e.js" crossorigin="anonymous"></script>
+    
+    <?php include_once 'incFiles/header.php'; ?>
+    
 </head>
 
 <body>
@@ -38,7 +35,7 @@
                 </div>
 
                 <div>
-                    <p>Register Now <a href="register.php">Register Here</a></p>
+                    <p><a href="register.php">Register Here</a></p>
                 </div>
                 <br>
                 <div class="btn-field">
@@ -48,6 +45,7 @@
             </form>
         </div>
     </div>
+	
 	<?php include_once 'incFiles/footer.php'; ?>
 </body>
 

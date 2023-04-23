@@ -12,26 +12,26 @@
 <html>
 
 <head>
-	<title>My Website</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<?php include_once 'incFiles/header.php'; ?>
 </head>
 
 <body>
-	<header>
-		<?php include_once 'incFiles/loggedinnavigation.php'; ?>
-	</header>
+	
+		<header>
+			<?php include_once 'incFiles/loggedinnavigation.php'; ?>
+		</header>
 
-	<main>
-		<h1>Welcome <?php echo $_SESSION["email"] ?> to your MovieLocker</h1>
-		
-		View <a href="movies.php">List of Movies</a>  
-		View your <a href="locker.php">Movies Lockers</a>  
+		<main>
+			<h1>Welcome <?php echo $_SESSION["email"] ?> to your MovieLocker</h1>
+			
+			View <a href="movies.php">List of Movies</a>  
+			View your <a href="locker.php">Movies Lockers</a>  
 
 
-	</main>
+		</main>
 
-	<?php include_once 'incFiles/footer.php'; ?>
-
+		<?php include_once 'incFiles/footer.php'; ?>
+	
 </body>
 
 </html>

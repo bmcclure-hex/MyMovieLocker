@@ -11,8 +11,7 @@
 <html>
 
 <head>
-	<title>My Website</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<?php include_once 'incFiles/header.php'; ?>
 </head>
 
 <body>
