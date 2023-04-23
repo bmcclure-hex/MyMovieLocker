@@ -96,15 +96,15 @@
 		
 		
 		
-			$sql = "SELECT tbl_locker.id, tbl_locker.name FROM `tbl_locker` WHERE tbl_locker.`user id` = ". $_SESSION["userid"] . ";";
+			$sql = "SELECT tbl_locker.id, tbl_locker.name, count(movie_id) as movie_count FROM `tbl_locker` left join tbl_lockermovies on id = locker_id WHERE tbl_locker.`user id` = ". $_SESSION["userid"] . " Group by locker_id;";
 			$result = mysqli_query($conn, $sql);
 		
 			if(mysqli_num_rows($result) > 0)
 			{
-				echo "<table><tr><th colspan=\"3\">Locker Name</th></tr>";
+				echo "<table><tr><th colspan=\"3\">Locker Name</th><th>Movie Count</th></tr>";
 				while($row = mysqli_fetch_assoc($result))
 				{
-					echo "<tr><td>" . $row["name"]. "</td><td><button type=\"submit\" class=\"btn btn-primary\" value=\"". $row["id"]. "\" name=\"lockerread\">View Locker</button></td><td><button type=\"submit\" class=\"btn btn-primary\" value=\"". $row["id"]. "\" name=\"lockerdelete\">Delete Locker</button></td></tr>";
+					echo "<tr><td>" . $row["name"]. "</td><td><button type=\"submit\" class=\"btn btn-primary\" value=\"". $row["id"]. "\" name=\"lockerread\">View Locker</button></td><td><button type=\"submit\" class=\"btn btn-primary\" value=\"". $row["id"]. "\" name=\"lockerdelete\">Delete Locker</button></td><td>". $row["movie_count"]."</td></tr>";
 				}
 				echo "</table>";
 			}

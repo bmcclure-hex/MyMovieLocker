@@ -1,6 +1,10 @@
 <?php
 	include_once 'incFiles/global.php';
 	include_once 'incFiles/signinuser.php';
+	
+	if(isset($_GET["logout"])){
+		session_destroy();
+	}
 ?>
 
 <!DOCTYPE html>
