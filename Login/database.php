@@ -2,7 +2,7 @@
 
 $serverName = "sql9.freemysqlhosting.net";
 $userName = "sql9613512";
-$password = "ARpRhrpEIM";
+$password = "1234";
 $dbName = "sql9613512";
 
 //connection
