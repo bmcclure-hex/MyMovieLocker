@@ -19,7 +19,7 @@
 			
 			$_SESSION["email"] = $email;
 			$_SESSION["userid"] = $row['id'];
-			header("Location: http://localhost/myaccount.php"); 
+			header("Location: http://localhost:3000/myaccount.php"); 
 		   // echo '<a href="'.$link_address.'">Link</a>';
 			echo" Account found!";
 		}else{
