@@ -1,0 +1,171 @@
+/* UTILITIES */
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.message {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+img {
+    border-radius: 2%;
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+h1,
+h2 {
+    color: rgb(34, 34, 34);
+    font-size: 47px;
+    font-weight: bold;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+
+h3 {
+    color: #414141;
+    font-size: 20px;
+    display: block;
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    color: #414141;
+    font-size: 30px;
+    display: block;
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li {
+    text-align: left;
+    font-weight: bold;
+}
+
+dd {
+    text-align: left;
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: rgb(174, 184, 218);
+}
+
+
+/* FOOTER STYLING */
+footer {
+    background-color: rgb(62, 84, 155);
+    /*tried to figure out how to get the footer to stay at the bottom of the page*/
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 25px;
+    font-size: 10px;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+    background-color: rgb(62, 84, 155);
+    color: #fff;
+}
+
+.nav-links a {
+    color: #fff;
+}
+
+/* LOGO */
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(219, 219, 219)
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+    font-size: 20px;
+}
+
+.menu li:hover {
+    background-color: #70b6ab;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.services {
+    position: relative;
+}
+
+.dropdown {
+    background-color: rgba(35, 90, 162, 0.763);
+    padding: 1em 0;
+    position: absolute;
+    /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+}
+
+.dropdown li+li {
+    margin-top: 10px;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+
+.dropdown li:hover {
+    background-color: #4c9e9e;
+}
+
+.services:hover .dropdown {
+    display: block;
+}
+
+.container {
+    text-align: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    padding-top: 100px;
+}

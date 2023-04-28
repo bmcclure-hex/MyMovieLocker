@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Your Lockers</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+		<nav class="navbar">
+			<!-- LOGO -->
+			<div class="logo">MyMovieLocker</div>
+
+			<!-- NAVIGATION MENU -->
+			<ul class="nav-links">
+
+				<!-- NAVIGATION MENUS -->
+				<div class="menu">
+					<li><a href="index.html">Home</a></li>
+                    <li><a href="moviespage.html">Movies</a></li>
+					<li><a href = "lockers.html">Lockers</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="../Login/login.php">Login</a></li>
+				</div>
+			</ul>
+		</nav>
+	</header>
+
+    <br>
+    <h2>Your Movies</h2>
+    <button onclick="showForm()">Add Movie</button>
+    <form id="add-movie-form" style="display:none;">
+        <label for="movie-title">Title:</label>
+        <input type="text" id="movie-title" name="movie-title" required>
+        <br>
+        <label for="movie-rating">Rating:</label>
+        <input type="number" id="movie-rating" name="movie-rating" min="1" max="10" required>
+        <br>
+        <button onclick="addMovie()">Save</button>
+        <button type="button" onclick="hideForm()">Cancel</button>
+    </form>
+    <ul id="movie-list">
+        <li>Movie 1 - Rating: 8</li>
+        <li>Movie 2 - Rating: 9</li>
+        <li>Movie 3 - Rating: 7</li>
+    </ul>
+    <br>
+    <br>
+
+    <h2>Your Lockers</h2>
+    <button onclick="showForm()">Create Locker</button>
+    <form id="create-locker-form" style="display:none;">
+        <label for="locker-name">Locker Name:</label>
+        <input type="text" id="locker-name" name="locker-name" required>
+        <br>
+        <button onclick="createLocker()">Create</button>
+        <button type="button" onclick="hideForm()">Cancel</button>
+    </form>
+    <ul id="locker-list">
+        <li>Locker 1</li>
+        <li>Locker 2</li>
+        <li>Locker 3</li>
+    </ul>
+    <br><br>
+</body>
+
+<footer>
+	<br>
+	<p style="text-align: center;">&copy; 2023 MyMovieLocker. All rights reserved.</p>
+</footer>
+</html>

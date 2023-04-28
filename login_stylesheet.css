@@ -1,0 +1,178 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 50, 0.8), rgba(0, 0, 50, 0.8)),
+    url(image.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.content {
+  width: 87%;
+  height: 85%;
+  min-width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 10px 10px 10px;
+  text-align: center;
+}
+
+.form-box {
+  width: 87%;
+  max-width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 50px 60px 70px;
+  text-align: center;
+}
+
+.form-box2 {
+  width: 850px;
+  height: 270px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #fff;
+  padding: 50px 0px 70px;
+  text-align: center;
+}
+
+.form-box h1::after {
+  content: "";
+  width: 30px;
+  height: 4px;
+  border-radius: 3px;
+  background: #3c00c0;
+  position: absolute;
+  bottom: 205px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.form-box h2::after {
+  content: "";
+  width: 30px;
+  height: 4px;
+  border-radius: 3px;
+  background: #3c00c0;
+  position: absolute;
+  bottom: 200px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+
+h1 {
+  color: #3c00c0;
+}
+
+h2 {
+  color: #3c00c0;
+  text-align: center;
+  font-size: 40px;
+}
+
+input {
+  width: 87%;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  padding: 18px 15px;
+}
+
+.form-group i {
+  margin-left: 15px;
+  color: #999;
+}
+
+.form-group {
+  background-color: rgb(229, 227, 227);
+  margin-top: 10px;
+  border-radius: 3px;
+  align-items: center;
+  max-height: 65px;
+  transition: max-height 0.5s;
+  overflow: hidden;
+}
+
+form p {
+  padding-top: 10px;
+  text-align: left;
+  font-size: 13px;
+}
+
+form p a {
+  text-decoration: none;
+  color: #3c00a0;
+}
+
+.btn-field {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-field button {
+  flex-basis: 48%;
+  background: #3c00a0;
+  color: #fff;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+
+  cursor: pointer;
+  transition: background 1s;
+  transform: translateX(50%);
+}
+
+.btn-field2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-field2 button {
+  flex-basis: 48%;
+  background: #7045b5;
+  color: #fff;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+
+  cursor: pointer;
+  transition: background 1s;
+  transform: translateX(50%);
+}
+
+.input-group {
+  height: 240px;
+}
+
+/* FOOTER STYLING */
+footer {
+  background-color: rgb(62, 84, 155);
+  /*tried to figure out how to get the footer to stay at the bottom of the page*/
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 25px;
+  font-size: 10px;
+}
