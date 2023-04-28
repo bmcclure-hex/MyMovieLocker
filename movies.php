@@ -1,4 +1,5 @@
 <?php
+	include_once 'incFiles/global.php';
 	include_once 'database.php';
 
 	$conn = OpenCon();
@@ -62,17 +63,30 @@
 
 	<main>
 		<h1>Available Movies</h1>
+		<div class="demo"></div>
 		<form action="addmovie2locker.php" method="post">
 		<?php
 		
 			if(mysqli_num_rows($result) > 0)
 			{
-				echo "<table><tr><th>Movie Title</th><th>Genre</th><th>Release Date</th><th>Director</th><th></th><th></th></tr>";
+				echo "<table><tr><th>Movie Title</th><th>Genre</th><th>Release Date</th><th>Director</th>";
+				
+				if($_SESSION["email"] != "")
+				{
+					echo "<th></th>";
+				}
+				echo "<th></th></tr>";
 				while($row = mysqli_fetch_assoc($result))
 				{
 					echo "<tr><td>" . $row["name"]. "</td><td>" . 
 					$row["genre"]. "</td><td>". $row["release date"]. "</td><td>". 
-					$row["director"] . "</td><td><button type=\"submit\" class=\"btn btn-primary\" value=\"". $row["id"]. "\" name=\"addmovietolocker\">Add to Locker</button></td><td><button type=\"submit\" class=\"btn btn-primary\" value=\"". $row["id"]. "\" name=\"viewmoviedetails\">Movie Details</button></td></tr>";
+					$row["director"] . "</td>";
+				
+					if($_SESSION["email"] != "")
+					{
+						echo "<td><button type=\"submit\" class=\"btn btn-primary\" value=\"". $row["id"]. "\" name=\"addmovietolocker\">Add to Locker</button></td>";
+					}
+					echo "<td><button type=\"submit\" class=\"btn btn-primary\" value=\"". $row["id"]. "\" name=\"viewmoviedetails\">Movie Details</button></td></tr>";
 				}
 				echo "</table>";
 			}

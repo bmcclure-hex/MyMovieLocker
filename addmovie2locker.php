@@ -6,7 +6,7 @@ if ($_SESSION["email"] == "") {
 }
 
 if (isset($_POST["viewmoviedetails"])) {
-	header("Location: http://localhost:3000/moviesdetail.php?movieid=" . $_POST["viewmoviedetails"]);
+	header("Location: http://localhost/moviesdetail.php?movieid=" . $_POST["viewmoviedetails"]);
 }
 
 include_once 'database.php';

@@ -22,7 +22,7 @@
 			$_SESSION["fname"] = $row['firstname'];
 			$_SESSION["lname"] = $row['lastname'];
 
-			header("Location: http://localhost:3000/myaccount.php"); 
+			header("Location: http://localhost/myaccount.php"); 
 		   // echo '<a href="'.$link_address.'">Link</a>';
 			echo" Account found!";
 		}else{
@@ -31,7 +31,7 @@
 	}
 
 	if (isset($_POST["return"])) {
-			header("Location: http://localhost:3000/index.php"); 
+			header("Location: http://localhost/index.php"); 
 	}
 	
 	CloseCon($conn);

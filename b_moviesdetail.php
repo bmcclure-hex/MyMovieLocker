@@ -1,4 +1,5 @@
 <?php
+include_once 'incFiles/global.php';
 include_once 'database.php';
 
 $conn = OpenCon();

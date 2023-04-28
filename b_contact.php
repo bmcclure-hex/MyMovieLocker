@@ -1,3 +1,6 @@
+<?php
+include_once 'incFiles/global.php';
+?>
 <!DOCTYPE html>
 <html>
 
@@ -8,7 +11,7 @@
 
 <body>
 	<header>
-		<?php include_once 'incFiles/b_navigation.php'; ?>
+		<?php include_once 'incFiles/loggedinnavigation.php'; ?>
 	</header>
 
 	<main>

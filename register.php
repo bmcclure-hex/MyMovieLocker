@@ -12,6 +12,9 @@ include_once 'incFiles/newregistration.php';
 </head>
 
 <body>
+	<header>
+		<?php include_once 'incFiles/loggedinnavigation.php'; ?>
+	</header>
     <div class="container">
         <div class="form-box">
 
@@ -47,10 +50,6 @@ include_once 'incFiles/newregistration.php';
                     <button type="submit" class="btn btn-primary" value="Register" name="submit">Sign up</button>
                 </div>
                 <br>
-                <div class="btn-field2">
-                    <button type="submit" class="btn btn-primary" value="Return" name="return">Home page</button>
-                </div>
-
             </form>
         </div>
     </div>

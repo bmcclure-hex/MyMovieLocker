@@ -19,6 +19,9 @@ if (isset($_GET["logout"])) {
 </head>
 
 <body>
+	<header>
+		<?php include_once 'incFiles/loggedinnavigation.php'; ?>
+	</header>
     <div class="container">
         <div class="form-box">
 
@@ -44,9 +47,6 @@ if (isset($_GET["logout"])) {
                     <button type="submit" class="btn btn-primary" value="Register" name="submit">Sign In</button>
                 </div>
                 <br>
-                <div class="btn-field2">
-                    <button type="submit" class="btn btn-primary" value="Return" name="return">Home page</button>
-                </div>
 
             </form>
         </div>
